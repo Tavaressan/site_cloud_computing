@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9 Servicos AWS - Guilherme Souza </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen bg-gradient-to-br from-gray-50 to-white">
+
+    <main class="container mx-auto px-4 py-8 max-w-4xl">
+
+        <header class="text-center mb-12">
+            <div class="inline-block p-4 bg-blue-600 rounded-2xl shadow-md mb-6">
+                <svg class="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                        d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z">
+                    </path>
+                </svg>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+                9 Servicos Úteis da AWS
+            </h1>
+            <p class="text-xl text-blue-600 font-medium">
+                Guilherme Souza Alves
+            </p>
+            <p class="text-sm text-gray-500 mt-2">
+                Cloud Computing - FATEC - 5o Semestre
+            </p>
+        </header>
+
+        <div class="flex flex-col gap-4">
+
+            <!-- AWS Lambda -->
+            <article
+                class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 hover:shadow-md hover:border-blue-300 transition-all group">
+                <div class="flex flex-col md:flex-row md:items-center gap-4">
+                    <div
+                        class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center group-hover:bg-blue-600 transition-colors shrink-0">
+                        <!-- Ícone de função/serverless -->
+                        <svg class="w-8 h-8 text-blue-600 group-hover:text-white transition-colors" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5v14">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="flex-1">
+                        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-1 mb-2">
+                            <h2 class="text-xl font-semibold text-gray-800">AWS Lambda</h2>
+                            <span class="text-sm text-blue-600 font-medium">Serverless Computing</span>
+                        </div>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            O AWS Lambda é um serviço serverless onde o desenvolvedor envia apenas funções de código que
+                            são executadas automaticamente quando ocorre um evento.
+                            Ele funciona sob demanda, criando a infraestrutura apenas no momento da execução e
+                            encerrando logo depois, o que reduz custos e simplifica o gerenciamento.
+                            O Lambda integra-se com diversos serviços da AWS e permite arquiteturas orientadas a
+                            eventos, disparando processos adicionais sempre que necessário.
+                            Exemplo prático: um upload de imagem em um bucket S3 pode acionar uma função Lambda que gera
+                            versões menores da imagem para uso no site.
+                        </p>
+
+
+                        <div class="mt-3 flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-gray-100 text-gray-600 rounded text-xs">Serverless</span>
+                            <span class="px-2 py-1 bg-gray-100 text-gray-600 rounded text-xs">Execução por
+                                eventos</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Amazon EC2 -->
+            <article
+                class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 hover:shadow-md hover:border-blue-300 transition-all group">
+                <div class="flex flex-col md:flex-row md:items-center gap-4">
+                    <div
+                        class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center group-hover:bg-blue-600 transition-colors shrink-0">
+                        <!-- Ícone de servidor/infraestrutura -->
+                        <svg class="w-8 h-8 text-blue-600 group-hover:text-white transition-colors" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"></path>
+                        </svg>
+                    </div>
+                    <div class="flex-1">
+                        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-1 mb-2">
+                            <h2 class="text-xl font-semibold text-gray-800">Amazon EC2</h2>
+                            <span class="text-sm text-blue-600 font-medium">Elastic Compute Cloud</span>
+                        </div>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            O Amazon EC2 é um serviço de infraestrutura como serviço que permite criar servidores
+                            virtuais na nuvem, chamados instâncias.
+                            Essas instâncias podem ser configuradas com diferentes níveis de memória, processamento e
+                            armazenamento, atendendo desde testes simples até aplicações empresariais robustas.
+                            O EC2 oferece flexibilidade para escolher sistema operacional e softwares, além de
+                            elasticidade para aumentar ou reduzir capacidade conforme a demanda.
+                            Exemplo prático: uma empresa pode hospedar seu sistema web em uma instância EC2 rodando
+                            Linux com servidor e banco de dados instalados manualmente.
+                        </p>
+
+                        <div class="mt-3 flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-gray-100 text-gray-600 rounded text-xs">Servidores virtuais</span>
+                            <span class="px-2 py-1 bg-gray-100 text-gray-600 rounded text-xs">Infraestrutura</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Amazon S3 -->
+            <article
+                class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 hover:shadow-md hover:border-blue-300 transition-all group">
+                <div class="flex flex-col md:flex-row md:items-center gap-4">
+                    <div
+                        class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center group-hover:bg-blue-600 transition-colors shrink-0">
+                        <!-- Ícone de armazenamento/bucket -->
+                        <svg class="w-8 h-8 text-blue-600 group-hover:text-white transition-colors" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 7h18M3 12h18M3 17h18"></path>
+                        </svg>
+                    </div>
+                    <div class="flex-1">
+                        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-1 mb-2">
+                            <h2 class="text-xl font-semibold text-gray-800">Amazon S3</h2>
+                            <span class="text-sm text-blue-600 font-medium">Simple Storage Service</span>
+                        </div>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            O Amazon S3 é um serviço de armazenamento de objetos que organiza arquivos em buckets e
+                            oferece alta durabilidade e disponibilidade.
+                            Cada objeto possui identificador único e metadados, permitindo acesso direto pela internet e
+                            facilitando o gerenciamento de grandes volumes de dados.
+                            A AWS replica automaticamente os arquivos em diferentes locais físicos, reduzindo a chance
+                            de perda de informação.
+                            Exemplo prático: sites podem armazenar imagens e vídeos enviados por usuários no S3,
+                            enquanto o servidor principal apenas gerencia a aplicação.
+                        </p>
+
+
+                        <div class="mt-3 flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-gray-100 text-gray-600 rounded text-xs">Armazenamento</span>
+                            <span class="px-2 py-1 bg-gray-100 text-gray-600 rounded text-xs">Objetos</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Amazon DynamoDB -->
+            <article
+                class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 hover:shadow-md hover:border-blue-300 transition-all group">
+                <div class="flex flex-col md:flex-row md:items-center gap-4">
+                    <div
+                        class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center group-hover:bg-blue-600 transition-colors shrink-0">
+                        <!-- Ícone de banco NoSQL -->
+                        <svg class="w-8 h-8 text-blue-600 group-hover:text-white transition-colors" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </div>
+                    <div class="flex-1">
+                        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-1 mb-2">
+                            <h2 class="text-xl font-semibold text-gray-800">Amazon DynamoDB</h2>
+                            <span class="text-sm text-blue-600 font-medium">NoSQL Database</span>
+                        </div>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            O Amazon DynamoDB é um banco de dados NoSQL totalmente gerenciado que utiliza estruturas
+                            flexíveis de chave-valor.
+                            Ele oferece respostas rápidas mesmo com grandes volumes de dados e ajusta automaticamente
+                            sua infraestrutura para manter o desempenho.
+                            Além disso, garante alta disponibilidade replicando informações em múltiplas zonas de
+                            disponibilidade.
+                            Exemplo prático: aplicativos mobile com milhões de usuários podem usar o DynamoDB para
+                            armazenar perfis e preferências.
+                        </p>
+
+
+                        <div class="mt-3 flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-gray-100 text-gray-600 rounded text-xs">NoSQL</span>
+                            <span class="px-2 py-1 bg-gray-100 text-gray-600 rounded text-xs">Alta performance</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Amazon Aurora -->
+            <article
+                class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 hover:shadow-md hover:border-blue-300 transition-all group">
+                <div class="flex flex-col md:flex-row md:items-center gap-4">
+                    <div
+                        class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center group-hover:bg-blue-600 transition-colors shrink-0">
+                        <!-- Ícone de banco relacional -->
+                        <svg class="w-8 h-8 text-blue-600 group-hover:text-white transition-colors" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 6h12v12H6z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="flex-1">
+                        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-1 mb-2">
+                            <h2 class="text-xl font-semibold text-gray-800">Amazon Aurora</h2>
+                            <span class="text-sm text-blue-600 font-medium">Relational Database Service</span>
+                        </div>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            O Amazon Aurora é um banco de dados relacional compatível com MySQL e PostgreSQL, projetado
+                            para unir a confiabilidade da nuvem com a estrutura tradicional SQL.
+                            Sua arquitetura distribui dados em vários nós de armazenamento, aumentando a confiabilidade
+                            e desempenho das consultas.
+                            O serviço também oferece backup automático, recuperação de falhas e replicação sem
+                            necessidade de administração manual.
+                            Exemplo prático: sistemas de e-commerce podem usar Aurora para armazenar pedidos, clientes e
+                            pagamentos com segurança.
+                        </p>
+
+                        <div class="mt-3 flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-gray-100 text-gray-600 rounded text-xs">SQL</span>
+                            <span class="px-2 py-1 bg-gray-100 text-gray-600 rounded text-xs">Alta confiabilidade</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- AWS WAF -->
+            <article
+                class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 hover:shadow-md hover:border-blue-300 transition-all group">
+                <div class="flex flex-col md:flex-row md:items-center gap-4">
+                    <div
+                        class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center group-hover:bg-blue-600 transition-colors shrink-0">
+                        <!-- Ícone de firewall/segurança -->
+                        <svg class="w-8 h-8 text-blue-600 group-hover:text-white transition-colors" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 2l9 4v6c0 5-3 9-9 10-6-1-9-5-9-10V6l9-4z"></path>
+                        </svg>
+                    </div>
+                    <div class="flex-1">
+                        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-1 mb-2">
+                            <h2 class="text-xl font-semibold text-gray-800">AWS WAF</h2>
+                            <span class="text-sm text-blue-600 font-medium">Web Application Firewall</span>
+                        </div>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            O AWS WAF é um firewall de aplicações web que protege contra acessos maliciosos e ataques
+                            como SQL Injection e Cross-Site Scripting.
+                            Ele analisa cada requisição HTTP/HTTPS e aplica regras configuradas para permitir, bloquear
+                            ou monitorar padrões de tráfego.
+                            Essa camada de proteção é essencial para aplicações expostas na internet, evitando que
+                            vulnerabilidades sejam exploradas.
+                            Exemplo prático: um portal corporativo pode usar o WAF para bloquear tentativas de acesso
+                            suspeitas antes de chegarem ao servidor.
+                        </p>
+
+                        <div class="mt-3 flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-gray-100 text-gray-600 rounded text-xs">Segurança</span>
+                            <span class="px-2 py-1 bg-gray-100 text-gray-600 rounded text-xs">Firewall</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Amazon CloudWatch -->
+            <article
+                class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 hover:shadow-md hover:border-blue-300 transition-all group">
+                <div class="flex flex-col md:flex-row md:items-center gap-4">
+                    <div
+                        class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center group-hover:bg-blue-600 transition-colors shrink-0">
+                        <!-- Ícone de monitoramento/observabilidade -->
+                        <svg class="w-8 h-8 text-blue-600 group-hover:text-white transition-colors" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="3" stroke-width="2"></circle>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h.09a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51h.09a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v.09a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="flex-1">
+                        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-1 mb-2">
+                            <h2 class="text-xl font-semibold text-gray-800">Amazon CloudWatch</h2>
+                            <span class="text-sm text-blue-600 font-medium">Monitoring Service</span>
+                        </div>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            O Amazon CloudWatch é o serviço de monitoramento da AWS que coleta métricas como uso de CPU,
+                            memória e requisições.
+                            Ele permite visualizar gráficos em tempo real e configurar alertas automáticos para detectar
+                            problemas antes que afetem os usuários.
+                            Além disso, armazena e analisa logs de aplicações, facilitando a identificação de erros e
+                            comportamentos inesperados.
+                            Exemplo prático: se uma instância EC2 ultrapassar o limite de CPU, o CloudWatch envia um
+                            alerta imediato aos administradores.
+                        </p>
+
+                        <div class="mt-3 flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-gray-100 text-gray-600 rounded text-xs">Monitoramento</span>
+                            <span class="px-2 py-1 bg-gray-100 text-gray-600 rounded text-xs">Logs</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- AWS CodeCommit -->
+            <article
+                class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 hover:shadow-md hover:border-blue-300 transition-all group">
+                <div class="flex flex-col md:flex-row md:items-center gap-4">
+                    <div
+                        class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center group-hover:bg-blue-600 transition-colors shrink-0">
+                        <!-- Ícone de repositório Git -->
+                        <svg class="w-8 h-8 text-blue-600 group-hover:text-white transition-colors" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 2a10 10 0 0 0-3.16 19.47c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.15-1.1-1.46-1.1-1.46-.9-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.56 9.56 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.85-2.34 4.7-4.57 4.95.36.31.68.92.68 1.85v2.74c0 .26.18.57.69.47A10 10 0 0 0 12 2z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="flex-1">
+                        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-1 mb-2">
+                            <h2 class="text-xl font-semibold text-gray-800">AWS CodeCommit</h2>
+                            <span class="text-sm text-blue-600 font-medium">Git Repository Service</span>
+                        </div>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            O AWS CodeCommit é um serviço de hospedagem de repositórios Git totalmente integrado ao
+                            ecossistema da AWS.
+                            Ele permite que equipes armazenem e acompanhem mudanças no código, mantendo histórico de
+                            versões e commits.
+                            O CodeCommit facilita pipelines de integração e entrega contínua (CI/CD), disparando testes
+                            e deploys automaticamente.
+                            Exemplo prático: uma equipe pode centralizar todo o código de um sistema em um repositório
+                            CodeCommit e acompanhar sua evolução.
+                        </p>
+
+                        <div class="mt-3 flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-gray-100 text-gray-600 rounded text-xs">Git</span>
+                            <span class="px-2 py-1 bg-gray-100 text-gray-600 rounded text-xs">CI/CD</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- AWS Auto Scaling -->
+            <article
+                class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 hover:shadow-md hover:border-blue-300 transition-all group">
+                <div class="flex flex-col md:flex-row md:items-center gap-4">
+                    <div
+                        class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center group-hover:bg-blue-600 transition-colors shrink-0">
+                        <svg class="w-8 h-8 text-blue-600 group-hover:text-white transition-colors" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 12h16M12 4v16">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="flex-1">
+                        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-1 mb-2">
+                            <h2 class="text-xl font-semibold text-gray-800">AWS Auto Scaling</h2>
+                            <span class="text-sm text-blue-600 font-medium">Automatic Scaling</span>
+                        </div>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            O AWS Auto Scaling ajusta automaticamente a quantidade de recursos computacionais conforme a
+                            demanda da aplicação.
+                            Ele cria novas instâncias em momentos de alta utilização e desliga quando o tráfego diminui,
+                            evitando desperdício de recursos.
+                            Esse mecanismo garante desempenho estável mesmo em picos inesperados de acesso.
+                            Exemplo prático: durante uma promoção em um site de vendas, o Auto Scaling adiciona
+                            instâncias EC2 extras para suportar o aumento de visitantes.
+                        </p>
+
+                        <div class="mt-3 flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-gray-100 text-gray-600 rounded text-xs">Escalabilidade</span>
+                            <span class="px-2 py-1 bg-gray-100 text-gray-600 rounded text-xs">Desempenho</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <footer class="text-center mt-12 text-gray-500 text-sm">
+                <p>Cloud Computing - FATEC 5o Semestre - 2026</p>
+            </footer>
+
+    </main>
+
+</body>
+
+</html>
